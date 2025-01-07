@@ -1,0 +1,45 @@
+.card-container{
+    width: 100%;
+    padding: 40px;
+}
+.card-image{
+    max-width: 400px;
+    aspect-ratio: 5;
+    border-radius: 10px;
+  }
+
+.card-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+   margin: 0 auto;
+    margin-top: 20px;
+}
+.main-heading{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.heading{
+    font-weight: 700;
+}
+
+.heading-span{
+    font-weight: 700;
+    color: #00798A;
+}
+
+.heading-card{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.free-div{
+    display: flex;
+    gap: 80px;
+}
+
+.para-card{
+    font-weight: 500;
+}
