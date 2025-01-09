@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "category": "Pottery",
+      "name": "Pottery for Beginners",
+      "description": "Learn the basics of pottery-making and create your first clay pot.",
+      "date": "2025-02-10",
+      "location": "Clay & Craft Studio, Main Street",
+      "price": 25.00,
+      "image": "src/assets/images/2.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Music",
+      "name": "Jazz Night Live",
+      "description": "Experience a mesmerizing evening of live jazz performances by renowned artists.",
+      "date": "2025-03-05",
+      "location": "Blue Note Cafe, Downtown",
+      "price": 50.00,
+      "image": "src/assets/images/4.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Art",
+      "name": "Abstract Art Exhibition",
+      "description": "Explore the works of contemporary abstract artists in a vibrant gallery setting.",
+      "date": "2025-03-15",
+      "location": "Modern Art Gallery, West Side",
+      "price": 15.00,
+      "image": "src/assets/images/5.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Food",
+      "name": "Gourmet Food Tasting",
+      "description": "Savor gourmet dishes prepared by top chefs with locally sourced ingredients.",
+      "date": "2025-04-01",
+      "location": "Riverside Banquet Hall",
+      "price": 75.00,
+      "image": "src/assets/images/9.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Literature",
+      "name": "Poetry Reading Night",
+      "description": "Join us for an intimate evening of poetry readings by acclaimed authors and poets.",
+      "date": "2025-04-15",
+      "location": "Library Auditorium, Central City",
+      "price": 10.00,
+      "image": "src/assets/images/3.jpg"
+    },
+    {
+      "id": 6,
+      "category": "Technology",
+      "name": "AI and Robotics Conference",
+      "description": "A conference featuring talks and demos on the latest in AI and robotics technology.",
+      "date": "2025-05-05",
+      "location": "TechHub Convention Center",
+      "price": 100.00,
+      "image": "src/assets/images/1.jpg"
+    }
+  ]
+  
