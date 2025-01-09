@@ -16,13 +16,24 @@ function Navbar() {
         <div className="searchbar">
           <div className="searchbar-child">
             <div className="searchbar-left">
-              <MdEventAvailable />
-              <input type="search" placeholder="Search Events" />
+              <MdEventAvailable className="searchbar-icon" />
+              <input
+                type="search"
+                placeholder="Search Events"
+                className="searchbar-input"
+              />
             </div>
-            <div>
-              <FaLocationDot />
-              <input type="search" placeholder="Choose Your Location" />
-              <FaSearchLocation />
+            <div className="searchbar-middle"></div>
+            <div className="searchbar-right">
+              <FaLocationDot className="searchbar-icon icon-middle" />
+              <input
+                type="search"
+                placeholder="Choose Your Location"
+                className="searchbar-input"
+              />
+              <div className="last-icon-div">
+                <FaSearchLocation className="searchbar-icon icon-last" />
+              </div>
             </div>
           </div>
         </div>
