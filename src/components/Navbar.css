@@ -1,0 +1,87 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.navbar-logo{
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+}
+
+.nav-heading{
+    font-weight: 600;
+    color: #cc3f24;
+}
+
+.nav-span{
+    color: #000;
+    font-weight: 800;
+}
+
+.login-signup{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-data{
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+
+.user-name{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5px;
+}
+
+.user-para{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.user-city{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.nav-button{
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #cc3f24;
+    color: #fff;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.searchbar-child{
+   width: 80%;
+   border: 1px solid #000;
+   border-radius: 30px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
