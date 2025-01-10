@@ -3,13 +3,22 @@ import logo from "../assets/images/1.jpg";
 import { MdOutlineLogin, MdEventAvailable } from "react-icons/md";
 import { FaSearchLocation } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const GoToHome = () => {
+    navigate("/");
+  };
   return (
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <h2 className="nav-heading">
+          <h2
+            className="nav-heading"
+            onClick={GoToHome}
+            style={{ cursor: "pointer" }}
+          >
             Local<span className="nav-heading nav-span">Events</span>
           </h2>
         </div>
