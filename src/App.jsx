@@ -4,6 +4,7 @@ import Card from './components/card';
 import Categories from './components/Categories';
 import Home from './Home';
 import Navbar from './components/navbar';
+import Eventdetails from './pages/Eventdetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
           <Route path="/card" element={<Card/>}/>
           <Route path="/categories" element={<Categories/>}/>
+          <Route path="/event-details" element={<Eventdetails/>}/>
         </Routes>
       </Router>
     </div>

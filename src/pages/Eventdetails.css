@@ -1,0 +1,55 @@
+.eventdetails-container{
+    margin: 40px 40px;
+
+}
+
+.eventdetails-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-left{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-header{
+    margin: 10px 10px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.left-div{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 20px;
+}
+
+.left-upper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px;
+}
+
+.left-para{
+    font-weight: 300;
+}
+
+.left-span{
+    font-weight: 600;
+}
+
+.left-lower{
+    margin-left: 40px;
+}
+
+.left-social{
+    display: flex;
+    font-size: 36px;
+    gap: 10px;
+    cursor: pointer;
+}
