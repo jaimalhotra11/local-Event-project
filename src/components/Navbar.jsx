@@ -10,6 +10,9 @@ function Navbar() {
   const GoToHome = () => {
     navigate("/");
   };
+  const GoToSignup = () => {
+    navigate("/signup");
+  };
   return (
     <>
       <nav className="navbar">
@@ -60,7 +63,7 @@ function Navbar() {
             </div>
           </div>
           <div className="button-div">
-            <button className="nav-button">
+            <button className="nav-button" onClick={GoToSignup}>
               <MdOutlineLogin /> SignIn
             </button>
           </div>
