@@ -64,19 +64,19 @@
   border-radius: 40px;
 }
 
-.body-container{
+.body-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 2fr;
   margin: 80px 40px;
 }
 
-.body-para{
+.body-para {
   font-size: 20px;
   font-weight: 300;
 }
 
-.body-card{
-  width: 70%;
+.body-card {
+  width: 90%;
   margin: 30px 20px 30px 0px;
   display: flex;
   justify-content: space-between;
@@ -86,24 +86,24 @@
   border-radius: 10px;
 }
 
-.body-card-left-img{
+.body-card-left-img {
   width: 80px;
   height: 80px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-.body-card-div{
+.body-card-div {
   display: flex;
   gap: 20px;
   align-items: center;
   font-size: 20px;
 }
 
-.body-card-left-para{
+.body-card-left-para {
   font-weight: 400;
 }
 
-.button-follow-btn{
+.button-follow-btn {
   border: none;
   outline: none;
   padding: 20px 40px;
@@ -114,41 +114,40 @@
   cursor: pointer;
   border-radius: 10px;
 }
-  
-.date-follow{
+
+.date-follow {
   font-size: 36px;
   font-weight: 600;
 }
 
-.body-section{
+.body-section {
   margin: 20px 0px;
-  width: 80%;
+  width: 90%;
 }
 
-.icon-div{
+.icon-div {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 20px;
 }
 
-.para-second{
+.para-second {
   color: #707070;
   margin-left: 40px;
-
 }
-.map{
+.map {
   width: 100%;
   margin: 20px 0px;
   aspect-ratio: 1.5;
   border-radius: 10px;
 }
 
-.icon-div-two{
+.icon-div-two {
   margin: 20px 0px;
 }
 
-.icon-div-tags{
+.icon-div-tags {
   font-size: 20px;
   padding: 15px;
   background: #707070;
@@ -157,6 +156,67 @@
   font-weight: 400;
 }
 
-.body-right{
+.body-right {
   position: sticky;
+}
+
+.body-right {
+  width: 100%;
+  position: sticky;
+  top: 50px;
+  height: 600px;
+  margin: 30px 0px;
+}
+
+.body-right-child {
+  width: 100%;
+  margin: 0px 20px;
+  background: #f8f7fa;
+  padding: 20px 0px;
+  font-size: 20px;
+  color: #000;
+  border-radius: 20px;
+}
+
+.body-right-child-first {
+  display: flex;
+  margin: 20px 40px 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-right-child-counter {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.body-right-child-de {
+  background: #3659e3;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.body-right-child-para {
+  font-weight: 500;
+}
+
+.free-icon {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px 20px 40px;
+  gap: 20px;
+}
+
+.body-right-child-btn {
+  margin-top: 20px;
+  outline: none;
+  font-weight: 500;
+  background: #3659e3;
+  border: none;
+  cursor: pointer;
 }

@@ -12,15 +12,25 @@ import { FaLinkedin } from "react-icons/fa";
 import EventsDetails from "../JsonData/EventDetails.json";
 import { useLocation } from "react-router-dom";
 import { BsCalendar2DateFill } from "react-icons/bs";
+import { useState } from "react";
 
 function Eventdetails() {
   const location = useLocation();
+  const [guestCounter, setGuestCounter] = useState(1);
   const titleparams = new URLSearchParams(location.search);
   const DecodeTitle = titleparams.get("title");
-  console.log("Title", DecodeTitle);
-
   const Event = EventsDetails.find((event) => event.title === DecodeTitle);
-  console.log("Event Name", Event);
+
+  const AddGuestCount = () => {
+    if (guestCounter <= 9) {
+      setGuestCounter((guestCounter) => guestCounter + 1);
+    }
+  };
+  const RemoveGuestCount = () => {
+    if (guestCounter >= 2) {
+      setGuestCounter((guestCounter) => guestCounter - 1);
+    }
+  };
   return (
     <>
       {Event ? (
@@ -71,17 +81,24 @@ function Eventdetails() {
           <div className="body-container">
             <div className="body-left">
               <p className="body-para">
-                Join us for a sneak peek into the Jaipur real coding events -
-                don't miss out!
+                ` Join us for a sneak peek into the Jaipur real coding events -
+                dont miss out!`
               </p>
               <div className="body-card">
                 <div className="body-card-left">
                   <div className="body-card-div">
-                    <img src={Event?.image} alt=""
-                    className="body-card-left-img" />
+                    <img
+                      src={Event?.image}
+                      alt=""
+                      className="body-card-left-img"
+                    />
                     <div className="body-card-left-paras">
-                      <p className="body-card-left-para">By Jai Malhotra . 423 followers</p>
-                      <p className="body-card-left-para">2.6k attendees hosted</p>
+                      <p className="body-card-left-para">
+                        By Jai Malhotra . 423 followers
+                      </p>
+                      <p className="body-card-left-para">
+                        2.6k attendees hosted
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -94,7 +111,9 @@ function Eventdetails() {
                 <h1 className="date-follow">Date and time</h1>
                 <div className="icon-div">
                   <BsCalendar2DateFill />
-                  <p className="body-para">January 18 · 10am - January 19 · 8pm IST</p>
+                  <p className="body-para">
+                    January 18 · 10am - January 19 · 8pm IST
+                  </p>
                 </div>
               </div>
 
@@ -104,19 +123,21 @@ function Eventdetails() {
                   <FaLocationDot />
                   <p className="body-para">
                     The Leela Ambience Gurugram Hotel & Residences - Millennium
-                    City's Only Lifestyle Hotel & Residences
+                    Citys Only Lifestyle Hotel & Residences
                   </p>
                 </div>
-                <p className="body-para para-second">National Highway 8 Gurugram, HR 122002</p>
+                <p className="body-para para-second">
+                  National Highway 8 Gurugram, HR 122002
+                </p>
                 <iframe
-                className="map"
+                  className="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.5723811496723!2d75.75732957376124!3d26.997950556425433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3c704e4d93f%3A0xf5b44f194b7ee9a9!2sshiv%20shakti%20departmental%20store!5e1!3m2!1sen!2sin!4v1736606396726!5m2!1sen!2sin"
                   width="600"
                   height="450"
                   style={{ border: "0" }}
                   allowfullscreen=""
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
 
@@ -133,7 +154,7 @@ function Eventdetails() {
                   with insights, networking, and opportunities in the real
                   estate industry. Connect with industry experts, explore new
                   projects, and stay ahead of the latest trends in the market.
-                  Don't miss out on this exclusive event in the heart of
+                  Dont miss out on this exclusive event in the heart of
                   Millennium City! See you there!
                 </p>
               </div>
@@ -146,23 +167,32 @@ function Eventdetails() {
                 </div>
               </div>
             </div>
-            <div className="body-righ">
-              <div className="body-right">
-                <div>
-                  <p>Entry Pass</p>
-                  <div>
-                    <p>-</p>
-                    <span>1</span>
-                    <p>+</p>
+            <div className="body-right">
+              <div className="body-right-child">
+                <div className="body-right-child-first">
+                  <p className="body-right-child-para">Entry Pass : </p>
+                  <div className="body-right-child-counter">
+                    <p
+                      className="body-right-child-de"
+                      onClick={RemoveGuestCount}
+                    >
+                      -
+                    </p>
+                    <span style={{ fontWeight: "500" }}>{guestCounter}</span>
+                    <p className="body-right-child-de" onClick={AddGuestCount}>
+                      +
+                    </p>
                   </div>
-                  <p>
-                    Free <IoInformationCircleSharp />
-                  </p>
                 </div>
+                <p className="body-right-child-para free-icon">
+                  Free <IoInformationCircleSharp />
+                </p>
               </div>
 
               <div>
-                <button>Enroll Now</button>
+                <button className="body-right-child body-right-child-btn">
+                  Enroll Now
+                </button>
               </div>
             </div>
           </div>
