@@ -134,13 +134,13 @@
 
 .icon-middle {
   margin-left: 10px;
-  color: #cc3f24;
+  color: #585163;
 }
 
 .last-icon-div {
   width: 50px;
   aspect-ratio: 1;
-  background: #cc3f24;
+  background: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
