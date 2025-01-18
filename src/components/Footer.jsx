@@ -1,8 +1,13 @@
 import "../components/Footer.css";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+  const GotoFaq = () =>{
+    navigate("/faq");
+  };
   return (
     <>
       <div className="footer">
@@ -92,7 +97,7 @@ function Footer() {
               <li className="footer-middle-li">Pricing</li>
               <li className="footer-middle-li">About</li>
               <li className="footer-middle-li">Process</li>
-              <li className="footer-middle-li">Answers</li>
+              <li className="footer-middle-li" onClick={GotoFaq}>Answers</li>
               <li className="footer-middle-li">Blogs</li>
               <li className="footer-middle-li">Contact Us</li>
             </ul>
