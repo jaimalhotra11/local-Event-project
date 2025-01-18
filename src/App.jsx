@@ -8,6 +8,7 @@ import Erros404 from "./pages/Erros404.jsx";
 import Signup from "./pages/Signup.jsx";
 import Login from "./pages/Login.jsx";
 import Eventslists from "./pages/Eventslists.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/events-list" element={<Eventslists />} />
           <Route path="*" element={<Erros404 />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
