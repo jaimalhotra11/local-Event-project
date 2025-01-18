@@ -1,0 +1,84 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 30px;
+  margin: 30px 40px;
+  /* background: #e8f9f0; */
+  border-top: 1px solid #cc3f24;
+}
+.nav-heading {
+  font-weight: 600;
+  color: #cc3f24;
+}
+
+.nav-span {
+  color: #000;
+  font-weight: 800;
+}
+
+.footer-first {
+  font-size: 28px;
+  margin: 30px 20px;
+}
+
+.footer-icons {
+  margin: 20px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  cursor: pointer;
+}
+
+.footer-para {
+  font-size: 16px !important;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.footer-para-span {
+  font-size: 16px !important;
+  font-weight: 500;
+  cursor: pointer;
+  color: #cc3f24;
+}
+
+.footer-first-mddle {
+  font-size: 16px;
+  margin: 30px 10px;
+}
+
+.footer-middle-heading {
+  font-weight: 300;
+}
+
+.footer-middle-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0px;
+  gap: 30px;
+  font-size: 16px;
+}
+
+.footer-end-lists {
+  margin: 20px 0px;
+  font-size: 16px;
+}
+
+.footer-middle-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-middle-li {
+  color: #000;
+  font-weight: 400;
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer-middle-li:hover {
+  font-weight: 500;
+}
