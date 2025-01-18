@@ -29,7 +29,66 @@ function Eventslists() {
           </div>
         </div>
         <div className="eventlist-second">
-          <div className="eventlist-second-first"><p>Filter Section</p></div>
+          <div className="eventlist-second-first">
+            <div className="filter-cat">
+              <h1 className="filter-head">
+                Filter by Price
+              </h1>
+              <div className="filter-parent">
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">All Price</label>
+                </div>
+
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">Free</label>
+                </div>
+
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">Paid</label>
+                </div>
+              </div>
+
+            </div>
+            <div className="filter-cat">
+              <h1 className="filter-head">
+                Filter by Date
+              </h1>
+              <div className="filter-parent">
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">Today</label>
+                </div>
+
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">Tomorrow</label>
+                </div>
+
+                <div className="filter-child">
+                <input type="checkbox" className="filter-input" />
+                <label className="filter-label">This Weekend</label>
+                </div>
+              </div>
+
+            </div>
+            <div className="filter-cat">
+              <h1 className="filter-head">
+                Filter by Place
+              </h1>
+              <div className="filter-parent">
+                <div className="filter-child">
+                <input type="search" placeholder ="Search Your City" className="filter-search" />
+                
+                </div>
+
+                
+              </div>
+
+            </div>
+          </div>
           <div className="card-parents">
               <div className="card">
                 <img
