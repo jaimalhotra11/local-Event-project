@@ -70,3 +70,41 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+
+.faq-accordin{
+    margin: 20px 10px;
+}
+
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.faq-question-para{
+   font-weight: 300;
+   margin: 10px 0px;
+   width: 90%;
+}
+
+.faq-answer{
+    width: 90%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.faq-answer-para{
+    font-weight: 200;
+
+}
+
+.faq-underline{
+    border-top: 1px solid #fff;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
+}
