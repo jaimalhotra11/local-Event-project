@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Faq.css";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -9,6 +9,19 @@ function Faq() {
   const toggleAccordian = (index) => {
     setIndexCount(indexCount === index ? -1 : index);
   };
+  useEffect(() => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'instant', 
+    });
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', 
+      });
+    }, 100); 
+  }, []);
   const faqs = [
     {
       question: "What is the refund policy for event tickets?",
