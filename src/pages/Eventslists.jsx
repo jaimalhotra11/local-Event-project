@@ -1,12 +1,19 @@
-import React from "react";
+
 import "./Eventslist.css";
 import "../components/Card.css";
 import image from "../assets/images/1.jpg";
 import { IoLocation, IoTicketOutline } from "react-icons/io5";
 import { CiCalendarDate } from "react-icons/ci";
 import { FaPeopleGroup } from "react-icons/fa6";
+import cardData from "../JsonData/EventCard.json";
+import { useState } from "react";
 
 function Eventslists() {
+  const [add, setAdd] = useState(false);
+  const fullList = add ? cardData : cardData.slice(0,6);
+  const showMore = () =>{
+    setAdd((prev)=> !prev);
+  }
   return (
     <>
       <div className="eventslists">
@@ -89,11 +96,15 @@ function Eventslists() {
 
             </div>
           </div>
+          <div className="card-parent-parents">
           <div className="card-parents">
-              <div className="card">
+          {fullList.map((item, index)=>{
+              return( 
+                <>
+                <div className="card" key={index}>
                 <img
                   style={{ cursor: "pointer" }}
-                  src={image}
+                  src={item?.image}
                   alt="card"
                   className="card-image"
                 />
@@ -102,13 +113,13 @@ function Eventslists() {
                     className="heading-card"
                     style={{ margin: "5px 0px", cursor: "pointer" }}
                   >
-                    Jaipur
+                    {item?.city}
                   </h1>
                   <p
                     className="para-card"
                     style={{ margin: "5px 0px", color: "#707070" }}
                   >
-                    Hosted By : <span className="para-card">Suri</span>
+                    Hosted By : <span className="para-card">{item?.host}</span>
                   </p>
                   <div
                     className="para-card"
@@ -117,7 +128,7 @@ function Eventslists() {
                     <CiCalendarDate />
                     <span className="para-card">
                       {" "}
-                     20 jan · 20
+                     {item?.date}
                     </span>
                   </div>
                   <div
@@ -128,256 +139,22 @@ function Eventslists() {
                       <FaPeopleGroup />
                       <span className="para-card">
                         {" "}
-                        200 attendees
+                        {item?.attendees} attendees
                       </span>
                     </div>
                     <div className="para-card">
                       <IoTicketOutline />
-                      <span className="para-card"> 200</span>
+                      <span className="para-card"> {item?.price}</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src={image}
-                  alt="card"
-                  className="card-image"
-                />
-                <div style={{ margin: "0px 10px" }}>
-                  <h1
-                    className="heading-card"
-                    style={{ margin: "5px 0px", cursor: "pointer" }}
-                  >
-                    Jaipur
-                  </h1>
-                  <p
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    Hosted By : <span className="para-card">Suri</span>
-                  </p>
-                  <div
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <CiCalendarDate />
-                    <span className="para-card">
-                      {" "}
-                     20 jan · 20
-                    </span>
-                  </div>
-                  <div
-                    className="free-div"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <div className="para-card">
-                      <FaPeopleGroup />
-                      <span className="para-card">
-                        {" "}
-                        200 attendees
-                      </span>
-                    </div>
-                    <div className="para-card">
-                      <IoTicketOutline />
-                      <span className="para-card"> 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src={image}
-                  alt="card"
-                  className="card-image"
-                />
-                <div style={{ margin: "0px 10px" }}>
-                  <h1
-                    className="heading-card"
-                    style={{ margin: "5px 0px", cursor: "pointer" }}
-                  >
-                    Jaipur
-                  </h1>
-                  <p
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    Hosted By : <span className="para-card">Suri</span>
-                  </p>
-                  <div
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <CiCalendarDate />
-                    <span className="para-card">
-                      {" "}
-                     20 jan · 20
-                    </span>
-                  </div>
-                  <div
-                    className="free-div"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <div className="para-card">
-                      <FaPeopleGroup />
-                      <span className="para-card">
-                        {" "}
-                        200 attendees
-                      </span>
-                    </div>
-                    <div className="para-card">
-                      <IoTicketOutline />
-                      <span className="para-card"> 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src={image}
-                  alt="card"
-                  className="card-image"
-                />
-                <div style={{ margin: "0px 10px" }}>
-                  <h1
-                    className="heading-card"
-                    style={{ margin: "5px 0px", cursor: "pointer" }}
-                  >
-                    Jaipur
-                  </h1>
-                  <p
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    Hosted By : <span className="para-card">Suri</span>
-                  </p>
-                  <div
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <CiCalendarDate />
-                    <span className="para-card">
-                      {" "}
-                     20 jan · 20
-                    </span>
-                  </div>
-                  <div
-                    className="free-div"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <div className="para-card">
-                      <FaPeopleGroup />
-                      <span className="para-card">
-                        {" "}
-                        200 attendees
-                      </span>
-                    </div>
-                    <div className="para-card">
-                      <IoTicketOutline />
-                      <span className="para-card"> 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src={image}
-                  alt="card"
-                  className="card-image"
-                />
-                <div style={{ margin: "0px 10px" }}>
-                  <h1
-                    className="heading-card"
-                    style={{ margin: "5px 0px", cursor: "pointer" }}
-                  >
-                    Jaipur
-                  </h1>
-                  <p
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    Hosted By : <span className="para-card">Suri</span>
-                  </p>
-                  <div
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <CiCalendarDate />
-                    <span className="para-card">
-                      {" "}
-                     20 jan · 20
-                    </span>
-                  </div>
-                  <div
-                    className="free-div"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <div className="para-card">
-                      <FaPeopleGroup />
-                      <span className="para-card">
-                        {" "}
-                        200 attendees
-                      </span>
-                    </div>
-                    <div className="para-card">
-                      <IoTicketOutline />
-                      <span className="para-card"> 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src={image}
-                  alt="card"
-                  className="card-image"
-                />
-                <div style={{ margin: "0px 10px" }}>
-                  <h1
-                    className="heading-card"
-                    style={{ margin: "5px 0px", cursor: "pointer" }}
-                  >
-                    Jaipur
-                  </h1>
-                  <p
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    Hosted By : <span className="para-card">Suri</span>
-                  </p>
-                  <div
-                    className="para-card"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <CiCalendarDate />
-                    <span className="para-card">
-                      {" "}
-                     20 jan · 20
-                    </span>
-                  </div>
-                  <div
-                    className="free-div"
-                    style={{ margin: "5px 0px", color: "#707070" }}
-                  >
-                    <div className="para-card">
-                      <FaPeopleGroup />
-                      <span className="para-card">
-                        {" "}
-                        200 attendees
-                      </span>
-                    </div>
-                    <div className="para-card">
-                      <IoTicketOutline />
-                      <span className="para-card"> 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </>
+              )
+            })};
+            
+          </div>
+          <div className="showMore-Finction"><button onClick={showMore} className="showMore-button">{add ? "Show Less" : "Show More"}</button></div>
           </div>
         </div>
       </div>
