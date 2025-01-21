@@ -8,7 +8,8 @@
       "time": "10:00 AM IST",
       "attendees": "5000+",
       "price": "Free",
-      "image": "src/assets/images/1.jpg"
+      "image": "src/assets/images/1.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "time": "6:00 AM IST",
       "attendees": "2000+",
       "price": "₹500",
-      "image": "src/assets/images/2.jpg"
+      "image": "src/assets/images/2.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "time": "12:00 PM IST",
       "attendees": "1000+",
       "price": "₹300",
-      "image": "src/assets/images/3.jpg"
+      "image": "src/assets/images/3.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "time": "7:30 AM IST",
       "attendees": "500+",
       "price": "₹200",
-      "image": "src/assets/images/4.jpg"
+      "image": "src/assets/images/4.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "time": "11:00 AM IST",
       "attendees": "800+",
       "price": "Free",
-      "image": "src/assets/images/5.jpg"
+      "image": "src/assets/images/5.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "time": "7:00 PM IST",
       "attendees": "3000+",
       "price": "₹1500",
-      "image": "src/assets/images/6.jpg"
+      "image": "src/assets/images/6.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "time": "5:00 PM IST",
       "attendees": "1000+",
       "price": "₹1000",
-      "image": "src/assets/images/7.jpg"
+      "image": "src/assets/images/7.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "time": "6:00 PM IST",
       "attendees": "200+",
       "price": "₹150",
-      "image": "src/assets/images/8.jpg"
+      "image": "src/assets/images/8.jpg",
+      "city": "Jaipur"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "time": "9:00 AM IST",
       "attendees": "1500+",
       "price": "Free",
-      "image": "src/assets/images/9.jpg"
+      "image": "src/assets/images/9.jpg",
+      "city": "Jaipur"
     }
   ]
   
