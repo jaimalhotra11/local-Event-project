@@ -10,6 +10,8 @@
     font-weight: 300;
     padding: 40px 0px 40px 60px;
     height: 100vh;
+    position: sticky;
+    top: 20px;
 }
 
 .dash-main{
