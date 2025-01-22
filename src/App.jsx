@@ -10,6 +10,7 @@ import Login from "./pages/Login.jsx";
 import Eventslists from "./pages/Eventslists.jsx";
 import Footer from "./components/Footer.jsx";
 import Faq from "./pages/Faq-page/Faq.jsx";
+import Hostdashboard from "./pages/Dashboards/Hostdashboard.jsx";
 
 function App() {
   return (
@@ -24,8 +25,10 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/events-list" element={<Eventslists />} />
-          <Route path="*" element={<Erros404 />} />
           <Route path="/faq" element={<Faq/>}/>
+          <Route path="/host-dashboard" element={<Hostdashboard />} />
+          
+          <Route path="*" element={<Erros404 />} />
         </Routes>
         <Footer />
       </Router>
