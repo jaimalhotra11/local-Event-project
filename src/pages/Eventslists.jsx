@@ -2,18 +2,28 @@
 import "./Eventslist.css";
 import "../components/Card.css";
 import image from "../assets/images/1.jpg";
-import { IoLocation, IoTicketOutline } from "react-icons/io5";
+import { IoTicketOutline } from "react-icons/io5";
 import { CiCalendarDate } from "react-icons/ci";
 import { FaPeopleGroup } from "react-icons/fa6";
 import cardData from "../JsonData/EventCard.json";
 import { useState } from "react";
 
 function Eventslists() {
-  const [add, setAdd] = useState(false);
-  const fullList = add ? cardData : cardData.slice(0,6);
-  const showMore = () =>{
-    setAdd((prev)=> !prev);
+  // const [add, setAdd] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filterData, setFilterData] = useState(cardData);
+  // const fullList = add ? cardData : cardData.slice(0,6);
+  const handleSearch = (event)=>{
+      const value = event.target.value.toLowerCase();
+      setSearchTerm(value);
+      const filterValue = cardData.filter((item)=> item.city.toLowerCase().includes(value) || item?.title.toLowerCase().includes(value));
+      setFilterData(filterValue)
   }
+
+  
+  // const showMore = () =>{
+  //   setAdd((prev)=> !prev);
+  // }
   return (
     <>
       <div className="eventslists">
@@ -87,7 +97,7 @@ function Eventslists() {
               </h1>
               <div className="filter-parent">
                 <div className="filter-child">
-                <input type="search" placeholder ="Search Your City" className="filter-search" />
+                <input type="search" placeholder ="Search Your City" className="filter-search" value={searchTerm} onChange={handleSearch}/>
                 
                 </div>
 
@@ -98,7 +108,7 @@ function Eventslists() {
           </div>
           <div className="card-parent-parents">
           <div className="card-parents">
-          {fullList.map((item, index)=>{
+          {filterData.map((item, index)=>{
               return( 
                 <>
                 <div className="card" key={index}>
@@ -113,7 +123,7 @@ function Eventslists() {
                     className="heading-card"
                     style={{ margin: "5px 0px", cursor: "pointer" }}
                   >
-                    {item?.city}
+                    {item?.title}
                   </h1>
                   <p
                     className="para-card"
@@ -154,7 +164,7 @@ function Eventslists() {
             })};
             
           </div>
-          <div className="showMore-Finction"><button onClick={showMore} className="showMore-button">{add ? "Show Less" : "Show More"}</button></div>
+          {/* <div className="showMore-Finction"><button onClick={showMore} className="showMore-button">{add ? "Show Less" : "Show More"}</button></div> */}
           </div>
         </div>
       </div>

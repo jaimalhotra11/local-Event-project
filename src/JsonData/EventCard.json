@@ -31,7 +31,7 @@
       "attendees": "1000+",
       "price": "₹300",
       "image": "src/assets/images/3.jpg",
-      "city": "Jaipur"
+      "city": "Kota"
     },
     {
       "id": 4,
@@ -97,7 +97,7 @@
       "attendees": "1500+",
       "price": "Free",
       "image": "src/assets/images/9.jpg",
-      "city": "Jaipur"
+      "city": "delhi"
     }
   ]
   
