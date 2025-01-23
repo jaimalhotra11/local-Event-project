@@ -10,6 +10,9 @@ import { IoTicketOutline } from "react-icons/io5";
 import { CiCalendarDate } from "react-icons/ci";
 import { FaPeopleGroup } from "react-icons/fa6";
 import cardData from "../../JsonData/EventCard.json";
+import weather from "../../assets/images/weather.jpg";
+import { TiWeatherCloudy } from "react-icons/ti";
+
 
 function Hostdashboard() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -96,10 +99,32 @@ function Hostdashboard() {
               </div>
             </div>
           </div>
-          <div className="card-parent-parents" style={{margin: "20px 40px"}}>
-          <div className="dash-heading">
-            <h1 className="head-head">My Events</h1>
+          <div className="weather-card">
+            <div className="weather-one">
+              <div className="weather-two">
+                <img src={weather} alt="weather" className="weather-image"/>
+                <span className="weather-span"> <TiWeatherCloudy />
+                Cloudy</span>
+                
+              </div>
+              <div className="card-info">
+                <p className="card-info-para">
+                  <span className="card-span">26.5</span> <span className="card-span"> <TiWeatherCloudy />
+                  Cloudy </span>
+                </p>
+                <icon />
+                <div className="card-date">
+                  <span className="card-span">26 January 2025</span>
+                  <span className="card-span">12:00 PM</span>
+                  <span className="card-span">Jaipur</span>
+                </div>
+              </div>
+            </div>
           </div>
+          <div className="card-parent-parents" style={{ margin: "20px 40px" }}>
+            <div className="dash-heading">
+              <h1 className="head-head">My Events</h1>
+            </div>
             <div className="card-parents">
               {filterData.map((item, index) => {
                 return (
