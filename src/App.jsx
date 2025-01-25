@@ -11,6 +11,8 @@ import Eventslists from "./pages/Eventslists.jsx";
 import Footer from "./components/Footer.jsx";
 import Faq from "./pages/Faq-page/Faq.jsx";
 import Hostdashboard from "./pages/Dashboards/Hostdashboard.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

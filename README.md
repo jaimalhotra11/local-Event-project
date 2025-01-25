@@ -10,12 +10,12 @@ This document outlines the components and features required for a website that s
 
 ### **1. Homepage**
 - **Hero Section:**
-  - Catchy tagline like "Discover Local Events and Plan Your Journey!"
-  - Search bar (with filters like "Events" or "Itineraries").
-  - Featured events or trending cities carousel.
+  <!-- - Catchy tagline like "Discover Local Events and Plan Your Journey!" -->
+  <!-- - Search bar (with filters like "Events" or "Itineraries"). -->
+  <!-- - Featured events or trending cities carousel. -->
 - **Navigation Bar:**
-  - Links to sections: Home, Events, Itineraries, About Us, Contact.
-  - Login/Register button.
+  <!-- - Links to sections: Home, Events, Itineraries, About Us, Contact. -->
+  <!-- - Login/Register button. -->
 - **Categories Section:**
   - Grid or list of event categories (e.g., Art, Technology, Music, Food, etc.).
   - Category filters with icons.

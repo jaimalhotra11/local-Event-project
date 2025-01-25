@@ -1,0 +1,44 @@
+.car-fade{
+    margin: 40px 20px;
+}
+
+.car-first{
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-first1{
+    background-image: url("../../assets/images/9.jpg");
+}
+.car-first2{
+    background-image: url("../../assets/images/6.jpg");
+}
+.car-first3{
+    background-image: url("../../assets/images/5.jpg");
+}
+.car-first4{
+    background-image: url("../../assets/images/1.jpg");
+}
+.car-first5{
+    background-image: url("../../assets/images/8.jpg");
+}
+
+.car-caption{
+    position:inherit;
+    color: #fff;
+    align-self: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.car-para{
+    font-weight: 200;
+}
