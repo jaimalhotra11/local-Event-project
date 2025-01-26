@@ -1,0 +1,85 @@
+.itenary-parent{
+    display: flex;
+    margin: 20px 40px;
+}
+
+.itenary-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.itenary-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.itenary-heading{
+    font-size: 28px;
+}
+
+.itenary-button{
+    font-size: 24px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #2B3EBE;
+    cursor: pointer;
+}
+
+.itenary-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+.itenary-card{
+    width: 100%;
+}
+
+.itenary-card-image{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.itenary-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.itenary-card-content{
+    margin: 40px 0px;
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background: #2B3EBE;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: -155px;
+}
+
+.itenary-card-div{
+    width: 60%;
+}
+.img-div2{
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+}
+.img2-itenary{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.itenary-card-para{
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 400;
+    color: #fff;
+}
