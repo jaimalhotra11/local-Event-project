@@ -12,6 +12,7 @@ import Footer from "./components/Footer.jsx";
 import Faq from "./pages/Faq-page/Faq.jsx";
 import Hostdashboard from "./pages/Dashboards/Hostdashboard.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItenaryDashboard from "./pages/ItenaryDashboard.jsx";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/events-list" element={<Eventslists />} />
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/host-dashboard" element={<Hostdashboard />} />
+          <Route path="/itenary-dashboard" element={<ItenaryDashboard />} />
           
           <Route path="*" element={<Erros404 />} />
         </Routes>
